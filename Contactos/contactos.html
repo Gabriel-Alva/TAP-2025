@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos</title>
+  <link rel="stylesheet" href="contactos.css">
+  <link rel="stylesheet" href="../Comun/comun.css">
+  <link rel="shortcut icon" href="../Recursos/img/logo.webp" type="image/x-icon">
+  <script src="contactos.js" defer></script>
+  <script src="../Comun/comun.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="Logo">
+    <button onclick="Boton(event)" class="BotonLogo">
+      <img src="../Recursos/img/logo.webp" alt="Logo" class="logo" />
+    </button>
+  </div>
+  <h1>CONTÁCTANOS</h1>
+</header>
+
+  
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../Servicio/servicio.html">Servicios</a>
+    <a href="contactos.html">Contactos</a>
+    <a href="../Menu/menu.html">Ir al Menú</a>
+  </nav>
+ 
+  <main class="FormularioContacto">
+    <section>
+      <p>Si desea más información acerca de nuestros servicios, o quiere brindar una sugerencia, por favor no dude en escribirnos que estaremos gustosos de leerlo:</p>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+        <div id="ubicacion-mas-cercana" class="resultado-cercano"></div>
+        <div id="mensaje-formulario"></div>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Av. Velasco Astete Kennedy, B-G-14,Wanchaq - Cusco</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.9768860691015!2d-71.95460982567269!3d-13.53700937143388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5f602601c7f%3A0xb64764297ab4ed63!2sPizzeria%20el%20Paladar%20del%20Inka!5e0!3m2!1ses!2spe!4v1748869827011!5m2!1ses!2spe" 
+ width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      <h2>Larapa Grande Av.3 B-8-2,San Jerónimo - Cusco</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.0101775979133!2d-71.90656592567271!3d-13.53496677139101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916e7f002eda49ad%3A0x50e5c78ba10becda!2sEl%20Paladar%20Del%20Inka!5e0!3m2!1ses!2spe!4v1748870433124!5m2!1ses!2spe" 
+ width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      <h2>Miguel Grau 1132,Santiago - Cusco</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.1230950746494!2d-71.98152502567291!3d-13.52803647124536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5000d8e6cb7%3A0x423b219a4f7bbc0e!2sPizzer%C3%ADa%20el%20Paladar%20del%20Inka!5e0!3m2!1ses!2spe!4v1748869924109!5m2!1ses!2spe" 
+ width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </aside>
+  </main>
+
+  </footer>
+</body>
+</html>

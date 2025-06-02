@@ -1,0 +1,299 @@
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFF5E1;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+}
+
+header {
+  background-color: #B22222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  animation: slideDown 0.6s ease-out;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #B22222;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fefefe;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  display: flex;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav {
+  background-color: #8B0000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #C1440E;
+  transform: scale(1.1);
+}
+
+main:not(.FormularioContacto,.Servicios,.COMPARTIMOS) {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div{
+  margin: 7px;
+  padding: 7px;
+}
+section,
+aside {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease;
+  flex: 1 1 300px;
+  min-width: 280px;
+  margin: 7px;
+  box-sizing: border-box;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: #B22222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+}
+.Redes{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1440px) {
+  main:not(.FormularioContacto,.Servicios),
+  .FormularioContacto,
+  .Servicios {
+    grid-template-columns: 1fr !important;
+  }
+
+  .content,
+  .bloque {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Texto,
+  .Imagen,
+  .pizza-card,
+  .bloque section,
+  .bloque aside {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .Imagen img,
+  .pizza-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .Texto {
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 1px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid orange;
+  border-radius: 7px;
+}
+
+textarea {
+  resize: none;
+}
+button:not(.BotonLogo,.BotonCarrito,.Eliminar,.BotonPizzasConocidas,.BotonSemiDulces,.EnviarReclamo) {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  margin-left: 50px;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: #B22222;
+  border: 1px solid white;
+  width: 80%;
+  height: 50px;
+}
+
+button:hover:not(.BotonLogo,.BotonCarrito,.Eliminar,.BotonPizzasConocidas,.BotonSemiDulces,.EnviarReclamo) {
+  background-color: #C1440E;
+  transform: scale(1.1);
+  color: #fefefe;
+}
+
+.BotonLogo {
+  text-decoration: none;
+  color: white;
+  margin: 0%;
+  padding: 0%;
+  border-radius: 7px;
+  background-color: #B22222;
+  border: 1px solid #B22222;
+  display: flex;
+  width: 50px;
+}
+
+
+
+.COMPARTIMOS{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.btn-menu-header {
+  margin-left: 20px;
+  padding: 8px 14px;
+  background-color: #8B0000;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-menu-header:hover {
+  background-color: #d62828;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

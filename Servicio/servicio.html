@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="../Comun/comun.css">
+  <link rel="stylesheet" href="../Servicio/servicio.css">
+  <link rel="shortcut icon" href="../Recursos/img/logo.webp" type="image/x-icon">
+  <script src="../Comun/comun.js" defer></script>
+</head>
+<header>
+  <div class="Logo">
+    <button onclick="Boton(event)" class="BotonLogo">
+      <img src="../Recursos/img/logo.webp" alt="Logo" class="logo" />
+    </button>
+  </div>
+  <h1>SERVICIOS</h1>
+</header>
+  <nav>
+  <a href="../index.html">Inicio</a>  
+  <a href="../Servicio/servicio.html">Servicios</a>
+  <a href="../Contactos/contactos.html">Contactos</a>
+  <a href="../Menu/menu.html">Ir al Menú</a>
+  </nav>
+
+ <main class="Servicios">
+  <section class="formulario">
+    <h1>Libro de Reclamaciones</h1>
+    <h2>Registre sus datos y el problema que tenga con nosotros estamos para mejorar su atencion</h2>
+    <form id="formReclamo">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="date" name="fecha" required>
+      <input type="text" name="domicilio" placeholder="Domicilio" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="telefono" placeholder="Teléfono / Celular" required>
+      <input type="text" name="dni" placeholder="DNI / PASS" required>
+
+      <label for="bien" class="full-width">Identificación del bien contratado</label>
+      <select name="bien" id="bien" class="full-width" required>
+        <option value="">Seleccione una opción</option>
+        <option value="Producto">Producto</option>
+        <option value="Servicio">Servicio</option>
+      </select>
+
+      <input type="text" name="detalle" class="full-width" placeholder="Detalle" required>
+      <textarea name="pedido" placeholder="Pedido" required></textarea>
+
+      <button type="submit" class="EnviarReclamo">Enviar</button>
+    </form>
+  </section>
+
+  <aside class="delivery-info">
+    <h2>Información de Delivery</h2>
+    <p><strong>Horario de Atención:</strong> Lunes a Domingo, 9:00 AM - 10:00 PM</p>
+    <p><strong>Zona de Delivery:</strong> Cusco y alrededores</p>
+    <p><strong>Teléfono de contacto:</strong> +51 987 654 321</p>
+    <p><strong>Correo:</strong> delivery@paladardelinka.com</p>
+    <p>Pedidos mínimos: S/ 20.00</p>
+    <p>Tiempo estimado de entrega: 45 minutos</p>
+  </aside>
+</main>
+
+
+  <footer>
+    &copy; 2025 Paladar del Inka - Todos los derechos reservados.
+    <img class="Redes" id="Facebook" src="../Recursos/img/facebook.webp" alt="Facebook">
+    <img class="Redes" id="Instagram" src="../Recursos/img/instagram.webp" alt="Instagram">
+    <img class="Redes" id="Tiktok" src="../Recursos/img/tik-tok.webp" alt="TikTok">
+  </footer>
+ 
+  
+ 
+</body>
+</html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+  <link rel="stylesheet" href="../Menu/Menu.css">
+  <link rel="stylesheet" href="../Comun/comun.css">
+  <link rel="shortcut icon" href="../Recursos/img/logo.webp" type="image/x-icon">
+  <script src="Menu.js" defer></script>
+  <script src="../Comun/comun.js" defer></script>
+</head>
+<body>
+<!-- Filtro -->
+<!-- Graficos e estadisticos de las pizzas mas vendidas y consumidas -->
+<header>
+  <div class="Logo">
+    <button onclick="Boton(event)" class="BotonLogo">
+      <img src="../Recursos/img/logo.webp" alt="Logo" class="logo" />
+    </button>
+  </div>
+  <h1>MENÚ</h1>
+</header>
+
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../Servicio/servicio.html">Servicios</a>
+    <a href="../Contactos/contactos.html">Contactos</a>
+    <a href="menu.html">Ir al Menú</a>
+  </nav>
+
+  <h2  >Conoce nuestro Menu </h2>
+
+<div class="filtros">
+  <input type="text" id="buscadorPizzas" placeholder="Buscar pizza...">
+
+</div>
+
+
+  <div class="BotonesDesplegablesMenu">
+     <button id="toggleMenuBtn" class="BotonPizzasConocidas">Conoce nuestras pizzas mas vendidas</button>
+
+  </div>
+<div id="mensajeBuscadorContainer"></div>
+  <main>
+
+
+      <div class="bloque" data-nombre="Mama Ocllo - ex Pizza Super Inka">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Super-Inka.webp" alt="Pizza Super Inka"></aside>
+        <section class="Texto">
+          <h2>Mama Ocllo - ex Pizza Super Inka</h2>
+          <p>Ingredientes:</p>
+          <ul>
+            <li>Jamón</li>
+            <li>chorizo</li>
+            <li>tocino</li>
+            <li>salchicha</li>
+            <li>champiñón</li>
+            <li>aceituna</li>
+            <li>piña</li>
+          </ul>
+          <p>Precio: $30.50</p>
+        <!-- <p>Jamón, chorizo, tocino, salchicha, champiñón, aceituna y piña.</p> -->
+          <button>Añadir al carrito</button>
+          
+          
+        </section>
+      </div>
+
+      <div class="bloque" data-nombre="Pizza Capricho del Inka">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Capricho.webp" alt="Pizza Capricho del Inka"></aside>
+        <section class="Texto">
+          <h2>Pizza Capricho del Inka</h2>
+          <p>Ingredientes:</p>
+           <ul>
+            <li>Tocino</li>
+            <li>peperoni</li>
+            <li>cebolla</li>
+            <li>aceituna</li>
+            <li>pimentón</li>
+          </ul>
+          <p>Precio: $21.50</p>
+          <!-- <p>Tocino, peperoni, cebolla, aceituna y pimentón.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+      <div class="bloque" data-nombre="Pizza Cuatro Estaciones">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Cuatro-Estaciones.webp" alt="Pizza Cuatro Estaciones"></aside>
+        <section class="Texto">
+          <h2>Pizza Cuatro Estaciones</h2>
+          <p>Ingredientes:</p>
+           <ul>
+            <li>1/4 de Pizza Especial</li>
+            <li>1/4 de Pizza Jamonada</li>
+            <li>1/4 de Pizza Napolitana</li>
+            <li>1/4 de Pizza Tropical</li>
+          </ul>
+          <p>Precio: $49.80</p>
+         <!--  <p>1/4 de Pizza Especial, 1/4 de Pizza Jamonada, 1/4 de Pizza Napolitana y 1/4 de Pizza Tropical.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+      <div class="bloque" data-nombre="Sipas- ex Pizza de la Casa">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Casa.webp" alt="Pizza de la Casa"></aside>
+        <section class="Texto">
+          <h2>Sipas- ex Pizza de la Casa</h2>
+          <p>Ingredientes:</p>
+           <ul>
+            <li>Jamón inglés</li>
+            <li>chorizo</li>
+            <li>tocino</li>
+          </ul>
+          <p>Precio: $19.80</p>
+          <!-- <p>Jamón inglés, chorizo y tocino.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+      <div class="bloque" data-nombre="Manco Ccapac- ex Pizza Especial">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Especial.webp" alt="Pizza Especial"></aside>
+        <section class="Texto">
+          <h2>Manco Ccapac- ex Pizza Especial</h2>
+          <p>Ingredientes:</p>
+           <ul>
+            <li>Jamonada</li>
+            <li>chorizo</li>
+            <li>tocino</li>
+            <li>salchicha</li>
+            <li>champiñón</li>
+            <li>pimentón</li>
+          </ul>
+          <p>Precio: $31.20</p>
+          <!-- <p>Jamonada, chorizo, tocino, salchicha, champiñón y pimentón.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+    
+
+      <div class="bloque" data-nombre="Pizza Paladar del Inka">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Paladar.webp" alt="Pizza Paladar del Inka"></aside>
+        <section class="Texto">
+          <h2>Pizza Paladar del Inka</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Jamonada</li>
+            <li>salame</li>
+            <li>tocino</li>
+            <li>huevo</li>
+            <li>tomate</li>
+          </ul>
+          <p>Precio: $22.90</p>
+          <!-- <p>Jamonada, salame, tocino, huevo y tomate.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+      <div class="bloque" data-nombre="Pizza Wiracocha">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Wiracocha.webp" alt="Pizza Wiracocha"></aside>
+        <section class="Texto">
+          <h2>Pizza Wiracocha</h2>
+          <p>Ingredientes:</p>
+           <ul>
+            <li>Jamonada</li>
+            <li>tocino</li>
+            <li>calabresa</li>
+            <li>champiñón</li>
+            <li>aceituna</li>
+            <li>cebolla</li>
+            <li>pimentón</li>
+          </ul>
+          <p>Precio: $23.10</p>
+          <!-- <p>Jamón, tocino, calabresa, champiñón, aceituna, cebolla y pimentón.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+      <div class="bloque" data-nombre="Pachamama-ex Pizza Presidencial">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Presidencial.webp" alt="Pizza Presidencial"></aside>
+        <section class="Texto">
+          <h2>Pachamama-ex Pizza Presidencial</h2>
+          <p>Ingredientes:</p>
+           <ul>
+            <li>Chorizo</li>
+            <li>tocino</li>
+            <li>salchicha</li>
+            <li>jamón York</li>
+          </ul>
+          <p>Precio: $19.50</p>
+          <!-- <p>Chorizo, tocino, salchicha y jamón York.</p> -->
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+
+  </main>
+
+
+   <!-- boton carrito fijo pantalla -->
+   <div class="BotonesDesplegablesMenu">
+    <button id="toggleMenuBtnSemi" class="BotonSemiDulces">Pizzas Semi Dulces</button>
+   </div>
+    
+   <main>
+
+    <div class="bloque2" data-nombre="Pizza Tawantinsuyo">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza-Tanwantinsuyo.webp" alt="Pizza Tawantinsuyo"></aside>
+        <section class="Texto">
+          <h2>Pizza Tawantinsuyo</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>1/4 de Pizza Especial</li>
+            <li>1/4 de Pizza Tropical Especial</li>
+            <li>1/4 de Pizza Vegetariana</li>
+            <li>1/4 de Pizza Americana</li>
+          </ul>
+          <p>Precio: $35.10</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+          <div class="bloque2" data-nombre="Pizza Warmicha">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Warmicha.webp" alt="Pizza Warmicha"></aside>
+        <section class="Texto">
+          <h2>Pizza Warmicha</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>1/2 Pizza Especial </li>
+            <li>1/2 Pizza Tropical</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+           <div class="bloque2" data-nombre="Pizza Huascar">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Huascar.webp" alt="Pizza Huascar"></aside>
+        <section class="Texto">
+          <h2>Pizza Huascar</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Piña</li>
+            <li>Champiñón</li>
+            <li>Jamón</li>
+            <li>Tocino </li>
+            <li>Calabresa</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+           <div class="bloque2" data-nombre="Pizza Willka - Ex Hawayana">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Willka.webp" alt="Pizza Willka"></aside>
+        <section class="Texto">
+          <h2>Pizza Willka - Ex Hawayana</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Piña</li>
+            <li>Jamón</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+               <div class="bloque2" data-nombre="Pizza Munay - Ex Super Hawayana">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Munay.webp" alt="Pizza  Munay"></aside>
+        <section class="Texto">
+          <h2>Pizza Munay - Ex Super Hawayana</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Piña</li>
+            <li>Jamon</li>
+            <li>Durazno </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+        <div class="bloque2" data-nombre="Pizza Ayni">
+        <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Ayni"></aside>
+        <section class="Texto">
+          <h2>Pizza Ayni</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Piña(opcional)</li>
+            <li>Chorizo</li>
+            <li>Jamonada</li>
+            <li>Tocino </li>
+            <li>Salchicha </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+
+   </main>
+   <h2 class="Subtitulo" >Pizzas Dulces</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Misk'i - Ex Tropical">
+     <aside class="Imagen"><img src="../Recursos/img/Pizza_Miski.webp" alt="Pizza Misk'i - Ex Tropical"></aside>
+        <section class="Texto">
+          <h2>Pizza Misk'i - Ex Tropical</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Papaya</li>
+            <li>platano</li>
+            <li>piña</li>
+            <li>manzana  </li>
+            <li>leche nestle </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Awka - Ex Tropical especial">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Awka.webp" alt="Pizza Awka - Ex Tropical especial"></aside>
+        <section class="Texto">
+          <h2>Pizza Awka - Ex Tropical especial</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Fresa</li>
+            <li>mango</li>
+            <li>durazno</li>
+            <li>plátano </li>
+            <li>piña </li>
+            <li>melon</li>
+            <li>fudge </li>
+            <li>leche nestle</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+         <div class="bloqueM" data-nombre="Pizza Jhillu">
+        <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Jhillu"></aside>
+        <section class="Texto">
+          <h2>Pizza Jhillu</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Fresa</li>
+            <li>mango</li>
+            <li>fudge </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+
+   <h2 class="Subtitulo" >Pizza Con Cuy</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Euge">
+     <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Euge"></aside>
+        <section class="Texto">
+          <h2>Pizza Euge</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Cabanossi de cuy</li>
+            <li>jamonada</li>
+            <li>chorizo</li>
+            <li>tocino  </li>
+            <li>salchicha </li>
+            <li>champiñón</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Illapa">
+        <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Illapa"></aside>
+        <section class="Texto">
+          <h2>Pizza Illapa</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Cabanossi de cuy</li>
+            <li>pollo</li>
+            <li>chorizo</li>
+            <li>tocino </li>
+            <li>cebolla </li>
+            <li>pimentón </li>
+            <li>champiñón </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+         <div class="bloqueM" data-nombre="Pizza Tawa Aycha">
+        <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Tawa Aycha"></aside>
+        <section class="Texto">
+          <h2>Pizza Tawa Aycha</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Cabanossi de cuy</li>
+            <li>carne</li>
+            <li>tocino  </li>
+            <li>pollo</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+
+    <h2 class="Subtitulo" >Pizza Con Carne</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Aklla">
+     <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Aklla"></aside>
+        <section class="Texto">
+          <h2>Pizza Aklla</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Carne</li>
+            <li>chorizo</li>
+            <li>tocino </li>
+            <li>aceituna  </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Auqui">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Auqui.webp" alt="Pizza Auqui"></aside>
+        <section class="Texto">
+          <h2>Pizza Auqui</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Carne</li>
+            <li>tocino</li>
+            <li>peperoni</li>
+            <li>calabresa </li>
+            <li>pimentón  </li>
+            <li>champiñón </li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+
+   
+    <h2 class="Subtitulo" >Pizza Con Pollo</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Qoya">
+     <aside class="Imagen"><img src="../Recursos/img/Pizza-Qoya.webp" alt="Pizza Qoya"></aside>
+        <section class="Texto">
+          <h2>Pizza Qoya</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Pollo</li>
+            <li>calabresa</li>
+            <li>champiñón</li>
+            <li>albahaca</li>
+            <li>piña</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Atahuallpa">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Atahualpa.webp" alt="Pizza Atahuallpa"></aside>
+        <section class="Texto">
+          <h2>Pizza Atahuallpa</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Pollo</li>
+            <li>salame</li>
+            <li>tocino</li>
+            <li>chorizo</li>
+            <li>jamón</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+           <div class="bloqueM" data-nombre="Pizza Illary - Ex Francesa">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Illary.webp" alt="Pizza Illary - Ex Francesa"></aside>
+        <section class="Texto">
+          <h2>Pizza Illary - Ex Francesa</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Pollo</li>
+            <li>pimentón </li>
+            <li>piña</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+
+   <h2 class="Subtitulo" >Pizzas Vegetarianas</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Killa">
+     <aside class="Imagen"><img src="../Recursos/img/Platos.webp" alt="Pizza Killa"></aside>
+        <section class="Texto">
+          <h2>Pizza Killa</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Champiñón</li>
+            <li>cebolla</li>
+            <li>aceituna</li>
+            <li>jamon (opcional)</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Inti - Ex Vegetariana">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Inti.webp" alt="Pizza Inti - Ex Vegetariana"></aside>
+        <section class="Texto">
+          <h2>Pizza Inti - Ex Vegetariana</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Espinaca</li>
+            <li>aceituna</li>
+            <li>tomate</li>
+            <li>champiñón</li>
+            <li>pimentón</li>
+            <li>cebolla</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+      <h2 class="Subtitulo" >Pizzas Picantes</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza China Saqra - Ex Palermo">
+     <aside class="Imagen"><img src="../Recursos/img/Pizza_China_Saqra.webp" alt="Pizza China Saqra - Ex Palermo"></aside>
+        <section class="Texto">
+          <h2>Pizza China Saqra - Ex Palermo</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Rocoto</li>
+            <li>jamón</li>
+            <li>tocino </li>
+            <li>calabresa</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Uchu Supay">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Uchu_Supay.webp" alt="Pizza Uchu Supay"></aside>
+        <section class="Texto">
+          <h2>Pizza Uchu Supay</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Rocoto</li>
+            <li>ají amarillo</li>
+            <li>cebolla blanca</li>
+            <li>carne</li>
+            <li>cabanossi</li>
+            <li>tocino </li>
+            <li>peperoni</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+         <h2 class="Subtitulo" >Pizzas Individuales</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Americana">
+     <aside class="Imagen"><img src="../Recursos/img/Pizza_Americana.webp" alt="Pizza Americana"></aside>
+        <section class="Texto">
+          <h2>Pizza Americana</h2>
+           <p>Ingredientes:</p>
+           <ul>
+            <li>Jamón </li>
+            <li>queso</li>
+          </ul>
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+    
+       <div class="bloqueM" data-nombre="Pizza Simple">
+        <aside class="Imagen"><img src="../Recursos/img/Pizza_Simple.webp"  alt="Pizza Simple"></aside>
+        <section class="Texto">
+          <h2>Pizza Simple</h2>
+           <p>Elige 01 de tus ingredientes favoritos</p>
+         
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div> 
+
+   </main>
+
+           <h2 class="Subtitulo" >Pizza Al Gusto</h2>
+   <main>
+     <div class="bloqueM" data-nombre="Pizza Al Gusto">
+     <aside class="Imagen"><img src="../Recursos/img/Pizza-Al-Gusto.webp" alt="Pizza Al Gusto"></aside>
+        <section class="Texto">
+          <h2>Pizza Al Gusto</h2>
+           <p>Elige tus 04 Sabores o 05 Ingredientes favoritos.</p>
+         
+          <p>Precio: $23.60</p>
+          <button>Añadir al carrito</button>
+        </section>
+      </div>
+   </main>
+
+
+
+  
+  <footer>
+    &copy; 2025 Paladar del Inka - Todos los derechos reservados.
+  <img class="Redes" id="Facebook" src="../Recursos/img/facebook.webp" alt="Facebook">
+    <img class="Redes" id="Instagram" src="../Recursos/img/instagram.webp" alt="Instagram">
+    <img class="Redes" id="Tiktok" src="../Recursos/img/tik-tok.webp" alt="TikTok">
+  </footer>
+
+  <div id="modalCantidad" class="modal">
+  <div class="modal-contenido">
+    <h2>¿Cuántas unidades deseas?</h2>
+    <input type="number" id="cantidadInput" min="1" value="1">
+    <button onclick="enviarAlCarrito()">Enviar al carrito</button>
+  </div>
+
+</div>
+<div id="modalCarrito" class="modal">
+  <div class="modal-contenido">
+    <h2>Carrito de Compras</h2>
+    <table id="tablaCarrito">
+      <thead>
+        <tr>
+          <th>Pizza</th>
+          <th>Cantidad</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+      </tbody>
+    </table>
+    <button onclick="cerrarModalCarrito()">Cerrar</button>
+  </div>
+</div>
+ <Button class="BotonCarrito" id="verCarrito"> 
+    <img class="Carrito" src="../Recursos/img/Carrito-removebg-preview.webp" alt="Carrito" ><h3  class="PalabrasC">Carrito</h3>
+   </Button>
+</body>
+</html>

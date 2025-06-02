@@ -1,0 +1,57 @@
+.Servicios {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr ; /* dos columnas iguales */
+  gap: 2rem;
+
+}
+
+.formulario {
+
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.delivery-info {
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Ajustar formulario inputs para que no usen 100% sino se adapten */
+input,  textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+}
+
+select{
+  width: 97%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+
+}
+.EnviarReclamo{
+  display: flex;
+  margin: 20px auto 0;
+  padding: 12px 40px;
+  background: #A52A2A;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #C1440E;
+}
